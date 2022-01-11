@@ -29,6 +29,7 @@ function effekt() {
 function igen() {
   console.log("igen");
   serveau.classList.remove("pulse");
+  window.location.href = "om_mig.html";
 }
 
 // bruger menu//
