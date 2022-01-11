@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="da">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/generel.css" />
+    <link rel="stylesheet" href="styles/04.css" />
+    <!-- skrifttyper -->
+    <link rel="stylesheet" href="https://use.typekit.net/poj5yvs.css" />
+    <link rel="icon" href="billeder/fav.svg" />
+    <title>Tema 4 - Animation</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div id="menuknap">☰</div>
+        <ul id="menu" class="hidden">
+          <li><a href="02.html">02</a></li>
+          <li><a href="03.html"> 03</a></li>
+          <li><a href="04.html"> 04</a></li>
+          <li><a href="05.html">05</a></li>
+          <li><a href="06.html">06</a></li>
+          <li><a href="om_mig.html">OM MIG</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- ● 04.05.03 Temaopgave -->
+    <main>
+      <h1>04. Grundlæggende Animation</h1>
+
+      <section id="first_section">
+        <div>
+          <h2>Tema Opgave / Spil</h2>
+          <h3>04.05.03</h3>
+          <a
+            class="button_links"
+            href="https://bertilserveau.dk/kea/04_animation/spil/spil.html"
+            target="_blank"
+            >Se Spil</a
+          >
+          <a
+            class="button_links"
+            href="https://bertilserveau.dk/kea/04_animation/spil/assets/index.html"
+            target="_blank"
+            >Se Doku Site</a
+          >
+        </div>
+
+        <div class="section_et">
+          <h2>Research / Ideudvikling</h2>
+          <p>
+            I tema 04_grundlæggende_animation blev vi introduceret til
+            kodesproget Javascript samt aktivitetsdiagrammer og statemachine
+            diagrammer som alt sammen dannede ramme om at producere vores eget
+            spil helt fra bunden. Vi lærte om, hvordan man tegner
+            baggrundsdesign og brug af atmosfærisk perspektiv til at skabe dybe
+            og kompositoriske settings. Vi lærte også om forskellige
+            lydformater, samt hvordan man bruger Adobe audition til at redigere
+            lyd. Vi blev også undervist i filformater som vektorgrafik vs pixel
+            grafik og hvornår, hvilke filformater skulle bruges.
+            <br />
+            <br />
+            Vi startede med at ideudvikle forskellige tanker omkring, hvad
+            spillet skulle handle om ved at lave en cross-method idé-genererings
+            øvelse. Desværre fik jeg ikke et resultat, jeg ville gå videre med.
+            Derfor begyndte jeg at skrive stikord til ideer ned. Først tanke var
+            at lave et spil, hvor man skulle samle ingredienserne til at lave
+            guacamole. Næste idé var dog bedre, synes jeg. Det var ideen om et
+            “pant”-spil. Jeg udviklede en papirprototype, som viste, hvordan
+            spillet skulle fungere samt dannede ramme for spil-skærmen.
+          </p>
+        </div>
+
+        <img
+          class="moodboard"
+          src="billeder/inspiration.webp"
+          alt="inspiration/moodboard"
+        />
+      </section>
+      <section id="second_section">
+        <div class="first_colon">
+          <h2>Skitsering</h2>
+
+          <p>
+            Efter jeg havde fundet ud af, hvad spillet skulle handle om prøvede
+            jeg at samle inspiration til, hvordan settingen i spillet skulle se
+            ud. Jeg gik derfor ned til den lokale Netto for at finde inspiration
+            i, hvordan deres pant-station så ud. Jeg tog billeder fra stationen
+            og gik hjem og begyndte at skitsere.
+          </p>
+          <img class="skitse4" src="billeder/prox.webp" alt="sketch_04" />
+        </div>
+
+        <div class="second_colon">
+          <h2>Visuel Stil</h2>
+          <p>
+            Jeg havde nu fundet ud af settingen i spillet og hvordan det skulle
+            fungere via aktivitetsdiagram. Næste step var at kiggede på, hvordan
+            den visuelle stil i spillet skulle se ud. Jeg valgte at gå med flat
+            design, da jeg synes, at det passede godt til setting i spillet og
+            gav et “moderne” og brugervenligt look.
+          </p>
+          <div class="daaser_flex">
+            <img class="cola1" src="billeder/cola_glad.svg" alt="sketch_03" />
+            <img class="oel_glad" src="billeder/oel_glad.svg" alt="oel_glad" />
+            <img class="tysk_oel" src="billeder/tysk_oel.svg" alt="tysk_oel" />
+            <img
+              class="tomat_daase"
+              src="billeder/tomat_daase.svg"
+              alt="tomat_daase"
+            />
+          </div>
+        </div>
+
+        <div class="third_colon">
+          <h2>Rentegning</h2>
+
+          <p>
+            Da jeg havde fået skitserne ned på papir samt valgt visuel stil, kom
+            jeg til rentegningen af Ui-elementer, setting samt karakterdesign.
+            Jeg valgte at gå med kontrastfarver i form af kolde monokromatiske
+            farver til baggrunden og varmere og lysere farver til karakter
+            designet.
+          </p>
+
+          <img
+            class="spilskaerm"
+            src="billeder/spilskaerm.svg"
+            alt="spilskaerm"
+          />
+        </div>
+      </section>
+
+      <section id="third_section">
+        <div>
+          <h2>Css-Animationer / Javascript</h2>
+
+          <p>
+            I tema 04_G_animation lærte vi om, hvordan man kunne bruge css
+            animationer (@keyframes) samt CSS positionering på sine classes med
+            figurer elementer for at de f. eks. bevæger sig op og ned på
+            skærmen, eller falder fra toppen og ned.
+
+            <br />
+            <br />
+            Vi lærte i sammenhæng med ny viden om CSS at bruge det med
+            Javascript f. eks. ved at bruge addClass/removeClass til at tilføje
+            eller fjerne animationer samt event listeners til at “lytte” efter
+            klik på bestemte elementer. Vi lærte også om variabler, og
+            math.random som vi brugte til at give spil elementerne random
+            positioner. Vi brugte betingelser (if-else) til at se, om man havde
+            vundet eller tabt spillet.
+          </p>
+        </div>
+        <img src="billeder/kode.webp" alt="splash" />
+      </section>
+
+      <div id="logo">
+        <a href="index.html"><img src="billeder/logo.svg" alt="logo" /></a>
+      </div>
+    </main>
+    <footer>
+      <h3>Eksamens Portfolie 2022</h3>
+      <h4>Af: Bertil Ishøj Serveau Bjørnbøl</h4>
+    </footer>
+    <script src="javascript/js.js"></script>
+  </body>
+</html>
